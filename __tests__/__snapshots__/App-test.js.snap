@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListHeaderComponent={[Function]}
+    data={Array []}
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.5}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onRefresh={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    refreshing={false}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "paddingHorizontal": 20,
+        "paddingVertical": 25,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          style={
+            Object {
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontWeight": "bold",
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            Sort by:
+          </Text>
+          <View>
+            <RCTPicker
+              items={
+                Array [
+                  Object {
+                    "label": "name",
+                    "textColor": undefined,
+                    "value": "name",
+                  },
+                  Object {
+                    "label": "symbol",
+                    "textColor": undefined,
+                    "value": "symbol",
+                  },
+                  Object {
+                    "label": "date_added",
+                    "textColor": undefined,
+                    "value": "date_added",
+                  },
+                  Object {
+                    "label": "market_cap",
+                    "textColor": undefined,
+                    "value": "market_cap",
+                  },
+                  Object {
+                    "label": "market_cap_strict",
+                    "textColor": undefined,
+                    "value": "market_cap_strict",
+                  },
+                  Object {
+                    "label": "price",
+                    "textColor": undefined,
+                    "value": "price",
+                  },
+                  Object {
+                    "label": "circulating_supply",
+                    "textColor": undefined,
+                    "value": "circulating_supply",
+                  },
+                  Object {
+                    "label": "total_supply",
+                    "textColor": undefined,
+                    "value": "total_supply",
+                  },
+                  Object {
+                    "label": "max_supply",
+                    "textColor": undefined,
+                    "value": "max_supply",
+                  },
+                  Object {
+                    "label": "num_market_pairs",
+                    "textColor": undefined,
+                    "value": "num_market_pairs",
+                  },
+                  Object {
+                    "label": "volume_24h",
+                    "textColor": undefined,
+                    "value": "volume_24h",
+                  },
+                  Object {
+                    "label": "percent_change_1h",
+                    "textColor": undefined,
+                    "value": "percent_change_1h",
+                  },
+                  Object {
+                    "label": "percent_change_24h",
+                    "textColor": undefined,
+                    "value": "percent_change_24h",
+                  },
+                  Object {
+                    "label": "percent_change_7d",
+                    "textColor": undefined,
+                    "value": "percent_change_7d",
+                  },
+                  Object {
+                    "label": "market_cap_by_total_supply_strict",
+                    "textColor": undefined,
+                    "value": "market_cap_by_total_supply_strict",
+                  },
+                  Object {
+                    "label": "volume_7d",
+                    "textColor": undefined,
+                    "value": "volume_7d",
+                  },
+                  Object {
+                    "label": "volume_30d",
+                    "textColor": undefined,
+                    "value": "volume_30d",
+                  },
+                ]
+              }
+              onChange={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              selectedIndex={3}
+              style={
+                Array [
+                  Object {
+                    "height": 216,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "fontWeight": "bold",
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            Sort direction:
+          </Text>
+          <View>
+            <RCTPicker
+              items={
+                Array [
+                  Object {
+                    "label": "asc",
+                    "textColor": undefined,
+                    "value": "asc",
+                  },
+                  Object {
+                    "label": "desc",
+                    "textColor": undefined,
+                    "value": "desc",
+                  },
+                ]
+              }
+              onChange={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              selectedIndex={0}
+              style={
+                Array [
+                  Object {
+                    "height": 216,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <Text
+            style={
+              Object {
+                "fontWeight": "bold",
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            Cryptocurrency type:
+          </Text>
+          <View>
+            <RCTPicker
+              items={
+                Array [
+                  Object {
+                    "label": "all",
+                    "textColor": undefined,
+                    "value": "all",
+                  },
+                  Object {
+                    "label": "coins",
+                    "textColor": undefined,
+                    "value": "coins",
+                  },
+                  Object {
+                    "label": "tokens",
+                    "textColor": undefined,
+                    "value": "tokens",
+                  },
+                ]
+              }
+              onChange={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              selectedIndex={0}
+              style={
+                Array [
+                  Object {
+                    "height": 216,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

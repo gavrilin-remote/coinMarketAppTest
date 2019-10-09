@@ -6,6 +6,9 @@ import Loader from "../components/shared/loader";
 import CurrencyList from '../components/currency/CurrencyList'
 
 class CryptoCurrenciesContainer extends Component {
+    constructor(props) {
+        super(props)
+    }
 
     componentDidMount() {
         this.props.getCurrencies()
@@ -41,7 +44,7 @@ class CryptoCurrenciesContainer extends Component {
     }
 }
 
-mapStateToProps =
+const mapStateToProps =
     ({
          currencies: {
              currencies,

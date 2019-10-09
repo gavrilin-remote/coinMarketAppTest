@@ -7,6 +7,9 @@ import {currencySetParams, getCurrencies, currencyRefreshAction} from'../../acti
 import _ from 'lodash'
 
 class ListHeader extends Component {
+    constructor(props) {
+        super(props)
+    }
 
     changeParam = async (key, value) =>{
         const {currencySetParams} = this.props;
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
     }
 });
 
-mapStateToProps = ({
+const mapStateToProps = ({
                        currencies: {
                            sort,
                            sort_dir,
