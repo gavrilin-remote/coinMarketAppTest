@@ -66,110 +66,29 @@ exports[`renders correctly 1`] = `
           >
             Sort by:
           </Text>
-          <View>
-            <RCTPicker
-              items={
-                Array [
-                  Object {
-                    "label": "name",
-                    "textColor": undefined,
-                    "value": "name",
-                  },
-                  Object {
-                    "label": "symbol",
-                    "textColor": undefined,
-                    "value": "symbol",
-                  },
-                  Object {
-                    "label": "date_added",
-                    "textColor": undefined,
-                    "value": "date_added",
-                  },
-                  Object {
-                    "label": "market_cap",
-                    "textColor": undefined,
-                    "value": "market_cap",
-                  },
-                  Object {
-                    "label": "market_cap_strict",
-                    "textColor": undefined,
-                    "value": "market_cap_strict",
-                  },
-                  Object {
-                    "label": "price",
-                    "textColor": undefined,
-                    "value": "price",
-                  },
-                  Object {
-                    "label": "circulating_supply",
-                    "textColor": undefined,
-                    "value": "circulating_supply",
-                  },
-                  Object {
-                    "label": "total_supply",
-                    "textColor": undefined,
-                    "value": "total_supply",
-                  },
-                  Object {
-                    "label": "max_supply",
-                    "textColor": undefined,
-                    "value": "max_supply",
-                  },
-                  Object {
-                    "label": "num_market_pairs",
-                    "textColor": undefined,
-                    "value": "num_market_pairs",
-                  },
-                  Object {
-                    "label": "volume_24h",
-                    "textColor": undefined,
-                    "value": "volume_24h",
-                  },
-                  Object {
-                    "label": "percent_change_1h",
-                    "textColor": undefined,
-                    "value": "percent_change_1h",
-                  },
-                  Object {
-                    "label": "percent_change_24h",
-                    "textColor": undefined,
-                    "value": "percent_change_24h",
-                  },
-                  Object {
-                    "label": "percent_change_7d",
-                    "textColor": undefined,
-                    "value": "percent_change_7d",
-                  },
-                  Object {
-                    "label": "market_cap_by_total_supply_strict",
-                    "textColor": undefined,
-                    "value": "market_cap_by_total_supply_strict",
-                  },
-                  Object {
-                    "label": "volume_7d",
-                    "textColor": undefined,
-                    "value": "volume_7d",
-                  },
-                  Object {
-                    "label": "volume_30d",
-                    "textColor": undefined,
-                    "value": "volume_30d",
-                  },
-                ]
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "height": 40,
+                "opacity": 1,
+                "paddingVertical": 5,
+                "width": "100%",
               }
-              onChange={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              selectedIndex={3}
-              style={
-                Array [
-                  Object {
-                    "height": 216,
-                  },
-                  undefined,
-                ]
-              }
-            />
+            }
+          >
+            <Text>
+              market_cap
+            </Text>
           </View>
           <Text
             style={
@@ -181,35 +100,29 @@ exports[`renders correctly 1`] = `
           >
             Sort direction:
           </Text>
-          <View>
-            <RCTPicker
-              items={
-                Array [
-                  Object {
-                    "label": "asc",
-                    "textColor": undefined,
-                    "value": "asc",
-                  },
-                  Object {
-                    "label": "desc",
-                    "textColor": undefined,
-                    "value": "desc",
-                  },
-                ]
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "height": 40,
+                "opacity": 1,
+                "paddingVertical": 5,
+                "width": "100%",
               }
-              onChange={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              selectedIndex={0}
-              style={
-                Array [
-                  Object {
-                    "height": 216,
-                  },
-                  undefined,
-                ]
-              }
-            />
+            }
+          >
+            <Text>
+              asc
+            </Text>
           </View>
           <Text
             style={
@@ -221,40 +134,29 @@ exports[`renders correctly 1`] = `
           >
             Cryptocurrency type:
           </Text>
-          <View>
-            <RCTPicker
-              items={
-                Array [
-                  Object {
-                    "label": "all",
-                    "textColor": undefined,
-                    "value": "all",
-                  },
-                  Object {
-                    "label": "coins",
-                    "textColor": undefined,
-                    "value": "coins",
-                  },
-                  Object {
-                    "label": "tokens",
-                    "textColor": undefined,
-                    "value": "tokens",
-                  },
-                ]
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "height": 40,
+                "opacity": 1,
+                "paddingVertical": 5,
+                "width": "100%",
               }
-              onChange={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              selectedIndex={0}
-              style={
-                Array [
-                  Object {
-                    "height": 216,
-                  },
-                  undefined,
-                ]
-              }
-            />
+            }
+          >
+            <Text>
+              all
+            </Text>
           </View>
         </View>
       </View>
