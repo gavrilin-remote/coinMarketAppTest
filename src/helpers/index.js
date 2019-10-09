@@ -14,3 +14,9 @@ export const parseResponse = (response) => {
     }
     return result
 };
+
+export const formatPrice = (number) => number && !isNaN(number)
+    ? `$ ${(number).toFixed(4).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`
+    : number;
+
+export const formatPercentage = (float) => parseFloat(float).toFixed(2) + "%"

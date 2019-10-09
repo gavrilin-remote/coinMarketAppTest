@@ -1,66 +1,48 @@
 import React, {memo} from 'react';
 import {View, Text, StyleSheet} from 'react-native'
 import _ from 'lodash'
+import {formatPercentage, formatPrice} from "../../helpers";
 
-const renderQuote = (quotes) =>
-    Object.entries(quotes).map(([key, value]) => (
-        <View style={styles.quote} key={_.uniqueId()}>
-            <Text style={styles.title}>{key}</Text>
-            {Object.entries(value).map(([k, v]) => renderKeyAndValue(k, v))}
-        </View>
-    ));
-
-const renderPlatform = (platform) => (
-    <View key={_.uniqueId()} style={{paddingHorizontal: 10}}>
-        <Text style={styles.title}>Platform</Text>
-        {Object.entries(platform).map(([k, v]) => renderKeyAndValue(k, v))}
+const renderQuote = ({market_cap, price, percent_change_1h, percent_change_24h, volume_24h, percent_change_7d}) => (
+    <View style={styles.quote} key={_.uniqueId()}>
+        <Text style={styles.title}>{'USD'}</Text>
+        {renderKeyAndValue('Market Cap', formatPrice(market_cap))}
+        {renderKeyAndValue('Price', formatPrice(price))}
+        {renderKeyAndValue('volume(24h)', formatPrice(volume_24h))}
+        {renderKeyAndValue('% 1h', formatPercentage(percent_change_1h))}
+        {renderKeyAndValue('% 24h', formatPercentage(percent_change_24h))}
+        {renderKeyAndValue('% 7d', formatPercentage(percent_change_7d))}
     </View>
 );
 
-const renderKeyAndValue = (key, value) => (
+const renderKeyAndValue = (key, value) => key && value
+    ? (
     <Text key={_.uniqueId()} style={styles.title}>
         {key.toUpperCase()}: <Text style={styles.value}>{value}</Text>
-    </Text>);
+    </Text>)
+    : null;
 
-const CurrencyItem = memo(({item}) =>
-    (
+const CurrencyItem = memo(({item}) =>(
         <View style={styles.itemView}>
-            {Object.entries(item).map(([key, value]) => {
-                    if (key === 'quote' && !_.isEmpty(value)) {
-                        return renderQuote(value)
-                    }
-                    if (key === 'platform') {
-                        if (!_.isEmpty(value)) {
-                            return renderPlatform(value)
-                        } else {
-                            return null
-                        }
-                    }
-                    if (key === 'tags') {
-                        if (value.length) {
-                            return renderKeyAndValue(key, value.join(', '))
-                        } else {
-                            return null
-                        }
-                    }
-                    return renderKeyAndValue(key, value)
-                }
-            )}
+            {renderKeyAndValue('name', item.name)}
+            {renderKeyAndValue('symbol', item.symbol)}
+            {item.quote.USD && renderQuote(item.quote.USD)}
+            {renderKeyAndValue('circulating supply', item.circulating_supply)}
         </View>
-    )
-);
+
+))
 
 const styles = StyleSheet.create({
     title: {
         fontWeight: 'bold'
     },
-    value:{
+    value: {
         fontWeight: 'normal'
     },
-    itemView:{
+    itemView: {
         paddingVertical: 10,
     },
-    quote:{
+    quote: {
         paddingHorizontal: 10
     }
 });
